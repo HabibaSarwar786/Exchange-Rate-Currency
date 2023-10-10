@@ -1,0 +1,211 @@
+/* ---------------------
+Basic styling-----------
+------------------------
+*/
+ *{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+/* ---------------------
+HML styling-----------
+------------------------
+*/
+html{
+    font-size: 62.5%;
+}
+@media(max-width:446px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:390px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:350px){
+    html{
+        font-size: 45%;
+    }
+}
+/* ---------------------
+Bsic Variables----------
+------------------------
+*/
+:root{
+     --gradient-color: linear-gradient(
+    270deg,
+    #944bdd,
+    #b349d0 11%,
+    #c846c1 22%,
+    #d94ab5 33%,
+    #e44ea6 44%,
+    #ee599c 56%,
+    #f36293 67%,
+    #f66f8a 78%,
+    #f77e88 89%,
+    #f68984
+  );
+    --whit-color:#fff;
+    --black-color:#000;
+    --primary-color:#5fbaa7;
+    --gutter-mini:0.5rem;
+    --gutter-mini-small:1rem;
+    --gutter-medium:1.5rem;
+    --guuter-small:2rem;
+    --gutter-x-small:2.5rem;
+    --gutter-x-large:3rem;
+    --gutter-large:4rem;
+    --basic-font-size:1.5rem;
+    --background-color:#e2dbdb;
+}
+
+/* ---------------------
+Body styling------------
+------------------------
+*/
+
+
+body{
+font-family:  'Lato', sans-serif;
+color: var(--whit-color);
+background-color:var(--background-color);
+display: flex;  
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: auto;
+
+}
+/* ------------------------
+main-box styling-----------
+---------------------------
+*/
+
+.main-box{
+    overflow: hidden;
+    border-radius: var(--gutter-mini-similar);
+    border: 2px solid transparent;
+    background: linear-gradient(
+      var(--background-color),
+      var(--background-color)
+    ),
+    var(--gradient-color);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border-radius: 2rem;
+    max-width: 43rem;
+    box-shadow: 0px 10px 20px 2px rgba(225, 89, 238, 0.9);
+
+}
+/* ---------------------
+h1 styling--------------
+------------------------
+*/
+
+h1{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--gutter-x-large);
+    font-weight: bold;
+    margin-top: var(--gutter-mini-small);
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: var(--black-color);
+    font-size:var(--gutter-medium);
+    margin-top: var(--gutter-medium);
+    margin-bottom: var(--gutter-x-large);
+    font-weight: bold;   
+}
+
+
+/* ---------------------
+btn styling-------------
+------------------------
+*/
+
+.btn{
+    color: var(--whit-color);
+    border: 1px solid transparent;
+    background-image: var(--gradient-color);
+    border-image-slice: 1;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: var(--gutter-medium);
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: auto;
+    margin-top:var(--guuter-small);
+    margin-bottom: var(--gutter-x-small);
+}
+.money-img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: var(--gutter-x-small);
+    transform: rotate(10deg) translateX(-30vh);
+    animation: animate ease-in-out 1.3s forwards;
+}
+@keyframes animate{
+    
+    80%{
+        transform: rotate(100deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+/* -----------------------
+currency styling----------
+--------------------------
+*/
+
+.currency{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currency select{
+    padding:0.5rem 0.5rem;
+    border: 2px solid transparent;
+    border-image:var(--gradient-color);
+    border-image-slice: 2;
+    margin-right:var(--gutter-medium);
+    font-weight: bold;
+    background: none;
+
+}
+.currency input{
+    border: 2px solid transparent;
+    border-image:var(--gradient-color);
+    border-image-slice: 2;
+    font-size: var(--gutter-x-small);
+    text-align: right;
+    max-width: 30%;   
+}
+
+/* -------------------------------
+rate-Container styling------------
+----------------------------------
+*/
+
+.swap-rate-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+select:focus,
+input:focus,
+button:focus{
+  outline: 0;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------------- 
+    Tittle link ----------------------
+    ---------------------------------->
+
+    <title>Habiba Sarwar Echange Rate Claculator</title>
+
+    <!-------------------------------- 
+    styling link ---------------------
+    ---------------------------------->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-------------------------------- 
+     Script Link ---------------------
+    ---------------------------------->
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-------------------------------- 
+    Main Box -------------------------
+    ---------------------------------->
+
+    <section class="main-box">
+      <img src="./img/money.png" class="money-img">
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the Currency and amounts to get the Exhange Rate </p>
+
+      <!-------------------------------- 
+      Main COntainer -------------------
+      ---------------------------------->
+
+    <div class="container">
+
+      <!-------------------------------- 
+      Currency  1-----------------------
+      ----------------------------------> 
+
+        <div class="currency">
+            <select  id="currency-one">
+                <option value="USD">USD</option>
+                <option value="ARS">ARS</option>
+                <option value="AED">AED</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="USD" selected>USD</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR ">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <input type="number" id="amount-one" value="0">
+        </div>
+
+        <!---------------------------------
+         Currency 2------------------------
+         ---------------------------------->   
+
+        <div class="currency">
+            <select  id="currency-two">
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AED">AED</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR " selected>EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <input type="number" id="amount-two" placeholder="0">
+        </div>
+
+          <!--------------------------------
+          Button ---------------------------
+          ---------------------------------->
+
+        <div class="swap-rate-container">
+            <a href="#" class="btn" id="swap">swip</a>
+            <div class="rate" id="rate"></div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
